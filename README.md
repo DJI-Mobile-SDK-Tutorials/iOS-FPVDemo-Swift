@@ -68,6 +68,12 @@ Please use **Github Issue** or **email** [oliver.ou@dji.com](oliver.ou@dji.com) 
 * A short description of your problem includes debug logs or screenshots.
 * Any bugs or typos you come across.
 
+## Contribution
+
+We'd love to accept your contributions to this project. All submissions require code review. We use GitHub pull requests for this process. Consult [GitHub Help](https://help.github.com/articles/about-pull-requests/) for more information.
+
+Special thanks to [@dwcares](https://github.com/dwcares) for the original contribution.
+
 ## License
 
 iOS-FPVDemo is available under the MIT license. Please see the **LICENSE** file for more info.
