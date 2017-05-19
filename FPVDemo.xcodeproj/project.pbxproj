@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EF9ACA540AE028719DDA1A2 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */; };
+		986E4DD81EC4EEFC0094EAD3 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */; };
+		986E4DD91EC4EEFC0094EAD3 /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A454E55B1EC5A2A2006B9E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454E5571EC5A2A2006B9E09 /* AppDelegate.swift */; };
+		A454E55C1EC5A2A2006B9E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A454E5581EC5A2A2006B9E09 /* Assets.xcassets */; };
+		A454E55D1EC5A2A2006B9E09 /* FPVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454E5591EC5A2A2006B9E09 /* FPVViewController.swift */; };
+		A454E55E1EC5A2A2006B9E09 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A454E55A1EC5A2A2006B9E09 /* Info.plist */; };
+		A454E5631EC5A2B6006B9E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454E55F1EC5A2B6006B9E09 /* LaunchScreen.storyboard */; };
+		A454E5641EC5A2B6006B9E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454E5611EC5A2B6006B9E09 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		986E4DDA1EC4EEFC0094EAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A435F2111E8BD6BF00D58045 /* VideoPreviewer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 02A543FC1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+		98B5E95B1EC4D72D00A66949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A435F2111E8BD6BF00D58045 /* VideoPreviewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 02A543FD1C3C51CB0083C11B;
+			remoteInfo = VideoPreviewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86985DA41E8356C600577EC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				986E4DD91EC4EEFC0094EAD3 /* VideoPreviewer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FPVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86985CC91E834EC200577EC7 /* FPVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A435F2111E8BD6BF00D58045 /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
+		A454E5571EC5A2A2006B9E09 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FPVDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		A454E5581EC5A2A2006B9E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FPVDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		A454E5591EC5A2A2006B9E09 /* FPVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FPVViewController.swift; path = FPVDemo/FPVViewController.swift; sourceTree = SOURCE_ROOT; };
+		A454E55A1EC5A2A2006B9E09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FPVDemo/Info.plist; sourceTree = SOURCE_ROOT; };
+		A454E5601EC5A2B6006B9E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FPVDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		A454E5621EC5A2B6006B9E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FPVDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		B5E4379880A961CF296B013B /* Pods-FPVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86985CC61E834EC200577EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E4DD81EC4EEFC0094EAD3 /* VideoPreviewer.framework in Frameworks */,
+				8EF9ACA540AE028719DDA1A2 /* libPods-FPVDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6F263FBC093B7B6FB6EF51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A435F2111E8BD6BF00D58045 /* VideoPreviewer.xcodeproj */,
+				8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86985CC01E834EC200577EC7 = {
+			isa = PBXGroup;
+			children = (
+				86985CCB1E834EC200577EC7 /* FPVDemo */,
+				86985CCA1E834EC200577EC7 /* Products */,
+				C0C7419B2667BCEE0BB6C689 /* Pods */,
+				0B6F263FBC093B7B6FB6EF51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86985CCA1E834EC200577EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86985CC91E834EC200577EC7 /* FPVDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86985CCB1E834EC200577EC7 /* FPVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A454E5571EC5A2A2006B9E09 /* AppDelegate.swift */,
+				A454E5591EC5A2A2006B9E09 /* FPVViewController.swift */,
+				A454E55A1EC5A2A2006B9E09 /* Info.plist */,
+				A454E55F1EC5A2B6006B9E09 /* LaunchScreen.storyboard */,
+				A454E5611EC5A2B6006B9E09 /* Main.storyboard */,
+				A454E5581EC5A2A2006B9E09 /* Assets.xcassets */,
+			);
+			name = FPVDemo;
+			path = "SDK Swift Sample";
+			sourceTree = "<group>";
+		};
+		98B5E9581EC4D72D00A66949 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0C7419B2667BCEE0BB6C689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E4379880A961CF296B013B /* Pods-FPVDemo.debug.xcconfig */,
+				9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86985CC81E834EC200577EC7 /* FPVDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86985CDD1E834EC200577EC7 /* Build configuration list for PBXNativeTarget "FPVDemo" */;
+			buildPhases = (
+				A23089ACBCAB63BE42DAD2F1 /* [CP] Check Pods Manifest.lock */,
+				86985CC51E834EC200577EC7 /* Sources */,
+				86985CC61E834EC200577EC7 /* Frameworks */,
+				86985CC71E834EC200577EC7 /* Resources */,
+				86985DA41E8356C600577EC7 /* Embed Frameworks */,
+				8A68B323F021A127CDC7173C /* [CP] Embed Pods Frameworks */,
+				7483B5029B3A2172B51AD3FB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				986E4DDB1EC4EEFC0094EAD3 /* PBXTargetDependency */,
+			);
+			name = FPVDemo;
+			productName = "SDK Swift Sample";
+			productReference = 86985CC91E834EC200577EC7 /* FPVDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86985CC11E834EC200577EC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = DJI;
+				TargetAttributes = {
+					86985CC81E834EC200577EC7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 86985CC41E834EC200577EC7 /* Build configuration list for PBXProject "FPVDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86985CC01E834EC200577EC7;
+			productRefGroup = 86985CCA1E834EC200577EC7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 98B5E9581EC4D72D00A66949 /* Products */;
+					ProjectRef = A435F2111E8BD6BF00D58045 /* VideoPreviewer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				86985CC81E834EC200577EC7 /* FPVDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VideoPreviewer.framework;
+			remoteRef = 98B5E95B1EC4D72D00A66949 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86985CC71E834EC200577EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A454E5631EC5A2B6006B9E09 /* LaunchScreen.storyboard in Resources */,
+				A454E55E1EC5A2A2006B9E09 /* Info.plist in Resources */,
+				A454E55C1EC5A2A2006B9E09 /* Assets.xcassets in Resources */,
+				A454E5641EC5A2B6006B9E09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7483B5029B3A2172B51AD3FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A68B323F021A127CDC7173C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23089ACBCAB63BE42DAD2F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86985CC51E834EC200577EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A454E55B1EC5A2A2006B9E09 /* AppDelegate.swift in Sources */,
+				A454E55D1EC5A2A2006B9E09 /* FPVViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		986E4DDB1EC4EEFC0094EAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VideoPreviewer;
+			targetProxy = 986E4DDA1EC4EEFC0094EAD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A454E55F1EC5A2B6006B9E09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A454E5601EC5A2B6006B9E09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A454E5611EC5A2B6006B9E09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A454E5621EC5A2B6006B9E09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86985CDB1E834EC200577EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86985CDC1E834EC200577EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86985CDE1E834EC200577EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E4379880A961CF296B013B /* Pods-FPVDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../VideoPreviewer",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FPVDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.FPVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		86985CDF1E834EC200577EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../VideoPreviewer",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/FPVDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dji.FPVDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86985CC41E834EC200577EC7 /* Build configuration list for PBXProject "FPVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86985CDB1E834EC200577EC7 /* Debug */,
+				86985CDC1E834EC200577EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86985CDD1E834EC200577EC7 /* Build configuration list for PBXNativeTarget "FPVDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86985CDE1E834EC200577EC7 /* Debug */,
+				86985CDF1E834EC200577EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86985CC11E834EC200577EC7 /* Project object */;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iqj-bn-gQq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="emN-qz-XNm">
+            <objects>
+                <viewController id="iqj-bn-gQq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jXX-b0-wCQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hSe-6w-NfR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Zj-xo-hgg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="FdO-V9-Epe">
+                                <rect key="frame" x="116" y="259.5" width="143" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FdO-V9-Epe" secondAttribute="height" multiplier="209:217" id="QrX-yY-rO1"/>
+                                    <constraint firstAttribute="height" priority="900" constant="217" id="VyG-Wk-uTk"/>
+                                    <constraint firstAttribute="width" priority="900" constant="209" id="nWA-LR-fZ2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058824" green="0.23137254900000001" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FdO-V9-Epe" firstAttribute="centerX" secondItem="2Zj-xo-hgg" secondAttribute="centerX" id="9qE-hJ-DA9"/>
+                            <constraint firstItem="FdO-V9-Epe" firstAttribute="centerY" secondItem="2Zj-xo-hgg" secondAttribute="centerY" id="GDQ-Du-igv"/>
+                            <constraint firstItem="FdO-V9-Epe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Zj-xo-hgg" secondAttribute="leadingMargin" constant="100" id="bEm-cc-jNw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pma-U4-v0N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="209" height="217"/>
+    </resources>
+</document>
