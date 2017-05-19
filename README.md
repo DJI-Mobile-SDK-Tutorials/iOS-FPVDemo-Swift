@@ -70,4 +70,4 @@ Please use **Github Issue** or **email** [oliver.ou@dji.com](oliver.ou@dji.com) 
 
 ## License
 
-iOS-FPVDemo is available under the MIT license. Please see the LICENSE file for more info.
+iOS-FPVDemo is available under the MIT license. Please see the **LICENSE** file for more info.
