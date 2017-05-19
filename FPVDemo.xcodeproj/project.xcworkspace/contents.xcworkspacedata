@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/zlinoliver/Desktop/iOS-FPVDemo-Swift-master/FPVDemo.xcodeproj">
+      location = "self:FPVDemo.xcodeproj">
    </FileRef>
 </Workspace>
