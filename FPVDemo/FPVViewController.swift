@@ -8,7 +8,7 @@ import DJISDK
 import VideoPreviewer
 
 
-class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerDelegate, DJIBaseProductDelegate, DJICameraDelegate {
+class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerDelegate, DJICameraDelegate {
     
     var isRecording : Bool!
     
