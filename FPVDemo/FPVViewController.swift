@@ -107,13 +107,12 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
     
     }
     
-    // DJIBaseProductDelegate Methods
+    // DJISDKManagerDelegate Methods
     func productConnected(_ product: DJIBaseProduct?) {
         
         NSLog("Product Connected")
         
         if (product != nil) {
-            product!.delegate = self
             let camera = self.fetchCamera()
             if (camera != nil) {
                 camera!.delegate = self
@@ -133,7 +132,6 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         self.resetVideoPreview()
     }
     
-    // DJISDKManagerDelegate Method
     func appRegisteredWithError(_ error: Error?) {
         
         var message = "Register App Successed!"
