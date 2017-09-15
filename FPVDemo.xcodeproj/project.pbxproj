@@ -10,12 +10,12 @@
 		8EF9ACA540AE028719DDA1A2 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */; };
 		986E4DD81EC4EEFC0094EAD3 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */; };
 		986E4DD91EC4EEFC0094EAD3 /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A454E55B1EC5A2A2006B9E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454E5571EC5A2A2006B9E09 /* AppDelegate.swift */; };
-		A454E55C1EC5A2A2006B9E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A454E5581EC5A2A2006B9E09 /* Assets.xcassets */; };
-		A454E55D1EC5A2A2006B9E09 /* FPVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454E5591EC5A2A2006B9E09 /* FPVViewController.swift */; };
-		A454E55E1EC5A2A2006B9E09 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A454E55A1EC5A2A2006B9E09 /* Info.plist */; };
-		A454E5631EC5A2B6006B9E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454E55F1EC5A2B6006B9E09 /* LaunchScreen.storyboard */; };
-		A454E5641EC5A2B6006B9E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A454E5611EC5A2B6006B9E09 /* Main.storyboard */; };
+		A4FA8DE61F6BDD8000EBD60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */; };
+		A4FA8DE71F6BDD8000EBD60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */; };
+		A4FA8DE81F6BDD8000EBD60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */; };
+		A4FA8DE91F6BDD8000EBD60F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE21F6BDD8000EBD60F /* Main.storyboard */; };
+		A4FA8DEA1F6BDD8000EBD60F /* FPVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */; };
+		A4FA8DEB1F6BDD8000EBD60F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE51F6BDD8000EBD60F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +54,12 @@
 		86985CC91E834EC200577EC7 /* FPVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A435F2111E8BD6BF00D58045 /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
-		A454E5571EC5A2A2006B9E09 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FPVDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		A454E5581EC5A2A2006B9E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FPVDemo/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		A454E5591EC5A2A2006B9E09 /* FPVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FPVViewController.swift; path = FPVDemo/FPVViewController.swift; sourceTree = SOURCE_ROOT; };
-		A454E55A1EC5A2A2006B9E09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FPVDemo/Info.plist; sourceTree = SOURCE_ROOT; };
-		A454E5601EC5A2B6006B9E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FPVDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		A454E5621EC5A2B6006B9E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FPVDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4FA8DE11F6BDD8000EBD60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4FA8DE31F6BDD8000EBD60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPVViewController.swift; sourceTree = "<group>"; };
+		A4FA8DE51F6BDD8000EBD60F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5E4379880A961CF296B013B /* Pods-FPVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 		86985CC01E834EC200577EC7 = {
 			isa = PBXGroup;
 			children = (
-				86985CCB1E834EC200577EC7 /* FPVDemo */,
+				A4FA8DDD1F6BDD8000EBD60F /* FPVDemo */,
 				86985CCA1E834EC200577EC7 /* Products */,
 				C0C7419B2667BCEE0BB6C689 /* Pods */,
 				0B6F263FBC093B7B6FB6EF51 /* Frameworks */,
@@ -103,26 +103,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86985CCB1E834EC200577EC7 /* FPVDemo */ = {
-			isa = PBXGroup;
-			children = (
-				A454E5571EC5A2A2006B9E09 /* AppDelegate.swift */,
-				A454E5591EC5A2A2006B9E09 /* FPVViewController.swift */,
-				A454E55A1EC5A2A2006B9E09 /* Info.plist */,
-				A454E55F1EC5A2B6006B9E09 /* LaunchScreen.storyboard */,
-				A454E5611EC5A2B6006B9E09 /* Main.storyboard */,
-				A454E5581EC5A2A2006B9E09 /* Assets.xcassets */,
-			);
-			name = FPVDemo;
-			path = "SDK Swift Sample";
-			sourceTree = "<group>";
-		};
 		98B5E9581EC4D72D00A66949 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				98B5E95C1EC4D72D00A66949 /* VideoPreviewer.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A4FA8DDD1F6BDD8000EBD60F /* FPVDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */,
+				A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */,
+				A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */,
+				A4FA8DE21F6BDD8000EBD60F /* Main.storyboard */,
+				A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */,
+				A4FA8DE51F6BDD8000EBD60F /* Info.plist */,
+			);
+			path = FPVDemo;
 			sourceTree = "<group>";
 		};
 		C0C7419B2667BCEE0BB6C689 /* Pods */ = {
@@ -215,10 +214,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A454E5631EC5A2B6006B9E09 /* LaunchScreen.storyboard in Resources */,
-				A454E55E1EC5A2A2006B9E09 /* Info.plist in Resources */,
-				A454E55C1EC5A2A2006B9E09 /* Assets.xcassets in Resources */,
-				A454E5641EC5A2B6006B9E09 /* Main.storyboard in Resources */,
+				A4FA8DEB1F6BDD8000EBD60F /* Info.plist in Resources */,
+				A4FA8DE91F6BDD8000EBD60F /* Main.storyboard in Resources */,
+				A4FA8DE81F6BDD8000EBD60F /* LaunchScreen.storyboard in Resources */,
+				A4FA8DE71F6BDD8000EBD60F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A454E55B1EC5A2A2006B9E09 /* AppDelegate.swift in Sources */,
-				A454E55D1EC5A2A2006B9E09 /* FPVViewController.swift in Sources */,
+				A4FA8DE61F6BDD8000EBD60F /* AppDelegate.swift in Sources */,
+				A4FA8DEA1F6BDD8000EBD60F /* FPVViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,18 +292,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A454E55F1EC5A2B6006B9E09 /* LaunchScreen.storyboard */ = {
+		A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A454E5601EC5A2B6006B9E09 /* Base */,
+				A4FA8DE11F6BDD8000EBD60F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		A454E5611EC5A2B6006B9E09 /* Main.storyboard */ = {
+		A4FA8DE21F6BDD8000EBD60F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A454E5621EC5A2B6006B9E09 /* Base */,
+				A4FA8DE31F6BDD8000EBD60F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
