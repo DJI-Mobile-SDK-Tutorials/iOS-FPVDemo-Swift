@@ -181,6 +181,7 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         let videoBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: videoData.length)
         videoData.getBytes(videoBuffer, length: videoData.length)
         VideoPreviewer.instance().push(videoBuffer, length: Int32(videoData.length))
+        videoBuffer.deallocate(capacity: videoData.length)
     }
     
     // IBAction Methods
