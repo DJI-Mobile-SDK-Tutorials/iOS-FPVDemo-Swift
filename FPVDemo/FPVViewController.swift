@@ -5,7 +5,7 @@
 
 import UIKit
 import DJISDK
-import VideoPreviewer
+import DJIWidget
 
 
 class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerDelegate, DJICameraDelegate {
@@ -45,7 +45,7 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
 
     func setupVideoPreviewer() {
        
-        VideoPreviewer.instance().setView(self.fpvView)
+        DJIVideoPreviewer.instance().setView(self.fpvView)
         let product = DJISDKManager.product();
         
         //Use "SecondaryVideoFeed" if the DJI Product is A3, N3, Matrice 600, or Matrice 600 Pro, otherwise, use "primaryVideoFeed".
@@ -57,11 +57,11 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         }else{
             DJISDKManager.videoFeeder()?.primaryVideoFeed.add(self, with: nil)
         }
-        VideoPreviewer.instance().start()
+        DJIVideoPreviewer.instance().start()
     }
     
     func resetVideoPreview() {
-        VideoPreviewer.instance().unSetView()
+        DJIVideoPreviewer.instance().unSetView()
         let product = DJISDKManager.product();
         
         //Use "SecondaryVideoFeed" if the DJI Product is A3, N3, Matrice 600, or Matrice 600 Pro, otherwise, use "primaryVideoFeed".
@@ -180,7 +180,7 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         let videoData = rawData as NSData
         let videoBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: videoData.length)
         videoData.getBytes(videoBuffer, length: videoData.length)
-        VideoPreviewer.instance().push(videoBuffer, length: Int32(videoData.length))
+        DJIVideoPreviewer.instance().push(videoBuffer, length: Int32(videoData.length))
     }
     
     // IBAction Methods
