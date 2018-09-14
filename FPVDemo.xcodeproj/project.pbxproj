@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8EF9ACA540AE028719DDA1A2 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */; };
-		A469857F21342544001A1F08 /* DJIWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A469857E2134253B001A1F08 /* DJIWidget.framework */; };
-		A469858021342544001A1F08 /* DJIWidget.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A469857E2134253B001A1F08 /* DJIWidget.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A469858421342550001A1F08 /* FFmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46985832134254F001A1F08 /* FFmpeg.framework */; };
-		A469858521342550001A1F08 /* FFmpeg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A46985832134254F001A1F08 /* FFmpeg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F6EE43C5B58A5585129E2D9 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C1DB3441026CDE0BC16AA /* libPods-FPVDemo.a */; };
 		A4FA8DE61F6BDD8000EBD60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */; };
 		A4FA8DE71F6BDD8000EBD60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */; };
 		A4FA8DE81F6BDD8000EBD60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */; };
@@ -20,44 +16,11 @@
 		A4FA8DEB1F6BDD8000EBD60F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE51F6BDD8000EBD60F /* Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A469857D2134253B001A1F08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A46985792134253B001A1F08 /* DJIWidget.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E54A2CD1F4A904000916B4D;
-			remoteInfo = DJIWidget;
-		};
-		A469858121342544001A1F08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A46985792134253B001A1F08 /* DJIWidget.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E54A2CC1F4A904000916B4D;
-			remoteInfo = DJIWidget;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		86985DA41E8356C600577EC7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A469858021342544001A1F08 /* DJIWidget.framework in Embed Frameworks */,
-				A469858521342550001A1F08 /* FFmpeg.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FPVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5C1DB3441026CDE0BC16AA /* libPods-FPVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FPVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86985CC91E834EC200577EC7 /* FPVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A46985792134253B001A1F08 /* DJIWidget.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DJIWidget.xcodeproj; path = DJIWidget/DJIWidget.xcodeproj; sourceTree = "<group>"; };
-		A46985832134254F001A1F08 /* FFmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpeg.framework; path = DJIWidget/FFmpeg/FFmpeg.framework; sourceTree = "<group>"; };
+		A4E7AEFE214BE0D9001F166F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4FA8DE11F6BDD8000EBD60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,9 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A469857F21342544001A1F08 /* DJIWidget.framework in Frameworks */,
-				8EF9ACA540AE028719DDA1A2 /* libPods-FPVDemo.a in Frameworks */,
-				A469858421342550001A1F08 /* FFmpeg.framework in Frameworks */,
+				2F6EE43C5B58A5585129E2D9 /* libPods-FPVDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +45,7 @@
 		0B6F263FBC093B7B6FB6EF51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A46985792134253B001A1F08 /* DJIWidget.xcodeproj */,
-				8292D6F935B6C78100F5A5BD /* libPods-FPVDemo.a */,
+				4E5C1DB3441026CDE0BC16AA /* libPods-FPVDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,7 +53,6 @@
 		86985CC01E834EC200577EC7 = {
 			isa = PBXGroup;
 			children = (
-				A46985832134254F001A1F08 /* FFmpeg.framework */,
 				A4FA8DDD1F6BDD8000EBD60F /* FPVDemo */,
 				86985CCA1E834EC200577EC7 /* Products */,
 				C0C7419B2667BCEE0BB6C689 /* Pods */,
@@ -109,14 +68,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A469857A2134253B001A1F08 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A469857E2134253B001A1F08 /* DJIWidget.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A4FA8DDD1F6BDD8000EBD60F /* FPVDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +77,7 @@
 				A4FA8DE21F6BDD8000EBD60F /* Main.storyboard */,
 				A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */,
 				A4FA8DE51F6BDD8000EBD60F /* Info.plist */,
+				A4E7AEFE214BE0D9001F166F /* Header.h */,
 			);
 			path = FPVDemo;
 			sourceTree = "<group>";
@@ -150,14 +102,12 @@
 				86985CC51E834EC200577EC7 /* Sources */,
 				86985CC61E834EC200577EC7 /* Frameworks */,
 				86985CC71E834EC200577EC7 /* Resources */,
-				86985DA41E8356C600577EC7 /* Embed Frameworks */,
 				8A68B323F021A127CDC7173C /* [CP] Embed Pods Frameworks */,
 				7483B5029B3A2172B51AD3FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A469858221342544001A1F08 /* PBXTargetDependency */,
 			);
 			name = FPVDemo;
 			productName = "SDK Swift Sample";
@@ -192,28 +142,12 @@
 			mainGroup = 86985CC01E834EC200577EC7;
 			productRefGroup = 86985CCA1E834EC200577EC7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A469857A2134253B001A1F08 /* Products */;
-					ProjectRef = A46985792134253B001A1F08 /* DJIWidget.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				86985CC81E834EC200577EC7 /* FPVDemo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A469857E2134253B001A1F08 /* DJIWidget.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DJIWidget.framework;
-			remoteRef = A469857D2134253B001A1F08 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		86985CC71E834EC200577EC7 /* Resources */ = {
@@ -288,14 +222,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A469858221342544001A1F08 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DJIWidget;
-			targetProxy = A469858121342544001A1F08 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */ = {
@@ -424,11 +350,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../VideoPreviewer",
-					"$(PROJECT_DIR)/DJIWidget/FFmpeg",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/FPVDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -436,6 +358,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dji.FPVDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,11 +373,7 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 7UL3LRJL93;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../VideoPreviewer",
-					"$(PROJECT_DIR)/DJIWidget/FFmpeg",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/FPVDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -461,6 +381,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dji.FPVDemoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

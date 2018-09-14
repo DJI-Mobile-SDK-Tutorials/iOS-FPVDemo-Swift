@@ -9,6 +9,7 @@ This FPVDemo is designed for you to gain a basic understanding of the DJI Mobile
  - iOS 10.0+
  - Xcode 8.3.2+
  - DJI iOS SDK 4.7.1
+ - DJIWidget 1.0
 
 ## SDK Installation with CocoaPods
 
@@ -38,6 +39,7 @@ If you install it successfully, you should get the messages similar to the follo
 Analyzing dependencies
 Downloading dependencies
 Installing DJI-SDK-iOS (4.7.1)
+Installing DJIWidget (1.0)
 Generating Pods project
 Integrating client project
 
@@ -56,6 +58,28 @@ installed.
 ## Tutorial
 
 For this demo's tutorial: **Creating a Camera Application**, please refer to <https://developer.dji.com/mobile-sdk/documentation/ios-tutorials/index.html>.
+
+## DJIWidget Integration
+
+Starting from DJI iOS SDK 4.7, we have replaced the **VideoPreviewer** with **DJIWidget** for video decoding. Please add the following line to your Podfile to install it to your Xcode project:
+
+~~~
+pod 'DJIWidget', '~> 1.0'
+~~~
+
+> Note: 
+> 
+> **1.** Remember to remove the `use_frameworks!` in the pod file.
+> 
+> **2.** In order to use the Objective-C header files of the DJIWidget in the swift project, create a new header file in the project and add the following code to add the DJIWidget's header files:
+> 
+> ~~~
+> #import <DJIWidget/DJIVideoPreviewer.h>
+> ~~~
+> 
+> **3.** Go to Project -> TARGETS -> Build Settings -> Search “bri” -> Double click "Objective-C Bridging Header" -> Drag the "Header.h" file to the pop-up window to set the path.
+> 
+> ![](./bridgeHeader.png)
 
 ## Feedback
 
