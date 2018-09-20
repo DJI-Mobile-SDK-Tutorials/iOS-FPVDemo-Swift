@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F6EE43C5B58A5585129E2D9 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5C1DB3441026CDE0BC16AA /* libPods-FPVDemo.a */; };
+		9CE4FEC069E98EE4941CE2C2 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF370DC4EE4B1D4F2C65FB /* libPods-FPVDemo.a */; };
 		A4FA8DE61F6BDD8000EBD60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */; };
 		A4FA8DE71F6BDD8000EBD60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */; };
 		A4FA8DE81F6BDD8000EBD60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */; };
@@ -17,16 +17,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E5C1DB3441026CDE0BC16AA /* libPods-FPVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FPVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86985CC91E834EC200577EC7 /* FPVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A4E7AEFE214BE0D9001F166F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4FA8DE11F6BDD8000EBD60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4FA8DE31F6BDD8000EBD60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPVViewController.swift; sourceTree = "<group>"; };
 		A4FA8DE51F6BDD8000EBD60F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2AF370DC4EE4B1D4F2C65FB /* libPods-FPVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FPVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4379880A961CF296B013B /* Pods-FPVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F6EE43C5B58A5585129E2D9 /* libPods-FPVDemo.a in Frameworks */,
+				9CE4FEC069E98EE4941CE2C2 /* libPods-FPVDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +44,7 @@
 		0B6F263FBC093B7B6FB6EF51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E5C1DB3441026CDE0BC16AA /* libPods-FPVDemo.a */,
+				B2AF370DC4EE4B1D4F2C65FB /* libPods-FPVDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,7 +76,6 @@
 				A4FA8DE21F6BDD8000EBD60F /* Main.storyboard */,
 				A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */,
 				A4FA8DE51F6BDD8000EBD60F /* Info.plist */,
-				A4E7AEFE214BE0D9001F166F /* Header.h */,
 			);
 			path = FPVDemo;
 			sourceTree = "<group>";

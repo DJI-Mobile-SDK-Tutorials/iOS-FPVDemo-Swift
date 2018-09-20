@@ -5,6 +5,7 @@
 
 import UIKit
 import DJISDK
+import DJIWidget
 
 class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerDelegate, DJICameraDelegate {
     
