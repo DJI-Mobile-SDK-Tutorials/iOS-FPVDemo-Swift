@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CE4FEC069E98EE4941CE2C2 /* libPods-FPVDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AF370DC4EE4B1D4F2C65FB /* libPods-FPVDemo.a */; };
 		A4FA8DE61F6BDD8000EBD60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */; };
 		A4FA8DE71F6BDD8000EBD60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DDF1F6BDD8000EBD60F /* Assets.xcassets */; };
 		A4FA8DE81F6BDD8000EBD60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE01F6BDD8000EBD60F /* LaunchScreen.storyboard */; };
 		A4FA8DE91F6BDD8000EBD60F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE21F6BDD8000EBD60F /* Main.storyboard */; };
 		A4FA8DEA1F6BDD8000EBD60F /* FPVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */; };
-		A4FA8DEB1F6BDD8000EBD60F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4FA8DE51F6BDD8000EBD60F /* Info.plist */; };
+		BD116977C152EAD5CADDD1A7 /* Pods_FPVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631F7997501E187198B5EBA3 /* Pods_FPVDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631F7997501E187198B5EBA3 /* Pods_FPVDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FPVDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86985CC91E834EC200577EC7 /* FPVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6CEF0828C4E1C613FFD95E /* Pods-FPVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A4FA8DDE1F6BDD8000EBD60F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +25,6 @@
 		A4FA8DE31F6BDD8000EBD60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4FA8DE41F6BDD8000EBD60F /* FPVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPVViewController.swift; sourceTree = "<group>"; };
 		A4FA8DE51F6BDD8000EBD60F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2AF370DC4EE4B1D4F2C65FB /* libPods-FPVDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FPVDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E4379880A961CF296B013B /* Pods-FPVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPVDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FPVDemo/Pods-FPVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE4FEC069E98EE4941CE2C2 /* libPods-FPVDemo.a in Frameworks */,
+				BD116977C152EAD5CADDD1A7 /* Pods_FPVDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +43,7 @@
 		0B6F263FBC093B7B6FB6EF51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2AF370DC4EE4B1D4F2C65FB /* libPods-FPVDemo.a */,
+				631F7997501E187198B5EBA3 /* Pods_FPVDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4FA8DEB1F6BDD8000EBD60F /* Info.plist in Resources */,
 				A4FA8DE91F6BDD8000EBD60F /* Main.storyboard in Resources */,
 				A4FA8DE81F6BDD8000EBD60F /* LaunchScreen.storyboard in Resources */,
 				A4FA8DE71F6BDD8000EBD60F /* Assets.xcassets in Resources */,
