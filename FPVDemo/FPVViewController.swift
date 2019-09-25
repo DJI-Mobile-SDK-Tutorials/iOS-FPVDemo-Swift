@@ -151,6 +151,10 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         self.showAlertViewWithTitle(title:"Register App", withMessage: message)
     }
     
+    func didUpdateDatabaseDownloadProgress(_ progress: Progress) {
+        NSLog("Download database : \n%lld/%lld" + progress.completedUnitCount, progress.totalUnitCount)
+    }
+    
     // DJICameraDelegate Method
     func camera(_ camera: DJICamera, didUpdate cameraState: DJICameraSystemState) {
         self.isRecording = cameraState.isRecording
