@@ -152,7 +152,7 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
     }
     
     func didUpdateDatabaseDownloadProgress(_ progress: Progress) {
-        NSLog("Download database : \n%lld/%lld" + progress.completedUnitCount, progress.totalUnitCount)
+        NSLog("Download database : \n%lld/%lld", progress.completedUnitCount, progress.totalUnitCount)
     }
     
     // DJICameraDelegate Method
