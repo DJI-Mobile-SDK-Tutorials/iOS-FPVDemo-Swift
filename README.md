@@ -49,7 +49,7 @@ installed.
 ~~~
 
 > **Note**: If you saw "Unable to satisfy the following requirements" issue during pod install, please run the following commands to update your pod repo and install the pod again:
-> 
+>
 > ~~~
 > pod repo update
 > pod install
@@ -71,7 +71,7 @@ pod 'DJIWidget', '~> 1.6.2'
 
 We’d love to hear your feedback for this demo and tutorial.
 
-Please use **Stack Overflow** [dji-sdk](https://stackoverflow.com/questions/tagged/dji-sdk) or **email** [dev@dji.com](dev@dji.com) when you meet any problems of using this demo. At a minimum please let us know:
+Please use **DJI Developer Forum** [dji-forum](https://forum.dji.com/forum-139-1.html?from=developer) or **email** [dev@dji.com](dev@dji.com) when you meet any problems of using this demo. At a minimum please let us know:
 
 * Which DJI Product you are using?
 * Which iOS Device and iOS version you are using?
@@ -93,4 +93,3 @@ iOS-FPVDemo is available under the MIT license. Please see the **LICENSE** file 
 DJI is looking for all kinds of Software Engineers to continue building the Future of Possible. Available positions in Shenzhen, China and around the world. If you are interested, please send your resume to <software-sz@dji.com>. For more details, and list of all our global offices, please check <https://we.dji.com/jobs_en.html>.
 
 DJI 招软件工程师啦，based在深圳，如果你想和我们一起把DJI产品做得更好，请发送简历到 <software-sz@dji.com>.  详情请浏览 <https://we.dji.com/zh-CN/recruitment>.
-
