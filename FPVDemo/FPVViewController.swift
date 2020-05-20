@@ -12,24 +12,10 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
     var isRecording : Bool!
     
     @IBOutlet var recordTimeLabel: UILabel!
-    
     @IBOutlet var captureButton: UIButton!
-    
     @IBOutlet var recordButton: UIButton!
-    
     @IBOutlet var workModeSegmentControl: UISegmentedControl!
-    
     @IBOutlet var fpvView: UIView!
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    
-        let camera = self.fetchCamera()
-        if((camera != nil) && (camera?.delegate?.isEqual(self))!){
-            camera?.delegate = nil
-        }
-        self.resetVideoPreview()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +24,17 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         recordTimeLabel.isHidden = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    
+        if let camera = fetchCamera(), let delegate = camera.delegate, delegate.isEqual(self) {
+            camera.delegate = nil
+        }
+        
+        self.resetVideoPreview()
     }
-
+    
     func setupVideoPreviewer() {
-       
         DJIVideoPreviewer.instance().setView(self.fpvView)
         let product = DJISDKManager.product();
         
@@ -51,9 +42,9 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         if ((product?.model == DJIAircraftModelNameA3)
             || (product?.model == DJIAircraftModelNameN3)
             || (product?.model == DJIAircraftModelNameMatrice600)
-            || (product?.model == DJIAircraftModelNameMatrice600Pro)){
+            || (product?.model == DJIAircraftModelNameMatrice600Pro)) {
             DJISDKManager.videoFeeder()?.secondaryVideoFeed.add(self, with: nil)
-        }else{
+        } else {
             DJISDKManager.videoFeeder()?.primaryVideoFeed.add(self, with: nil)
         }
         DJIVideoPreviewer.instance().start()
@@ -67,23 +58,21 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         if ((product?.model == DJIAircraftModelNameA3)
             || (product?.model == DJIAircraftModelNameN3)
             || (product?.model == DJIAircraftModelNameMatrice600)
-            || (product?.model == DJIAircraftModelNameMatrice600Pro)){
+            || (product?.model == DJIAircraftModelNameMatrice600Pro)) {
             DJISDKManager.videoFeeder()?.secondaryVideoFeed.remove(self)
-        }else{
+        } else {
             DJISDKManager.videoFeeder()?.primaryVideoFeed.remove(self)
         }
     }
     
     func fetchCamera() -> DJICamera? {
-        let product = DJISDKManager.product()
-        
-        if (product == nil) {
+        guard let product = DJISDKManager.product() else {
             return nil
         }
-        
-        if (product!.isKind(of: DJIAircraft.self)) {
+        if product is DJIAircraft {
             return (product as! DJIAircraft).camera
-        } else if (product!.isKind(of: DJIHandheld.self)) {
+        }
+        if product is DJIHandheld {
             return (product as! DJIHandheld).camera
         }
         return nil
@@ -98,51 +87,42 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
     }
     
     func showAlertViewWithTitle(title: String, withMessage message: String) {
-    
-       let alert = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-       let okAction = UIAlertAction.init(title:"OK", style: UIAlertActionStyle.default, handler: nil)
-      alert.addAction(okAction)
-      self.present(alert, animated: true, completion: nil)
-    
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction.init(title:"OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
-    // DJISDKManagerDelegate Methods
+    // MARK: DJISDKManagerDelegate Methods
     func productConnected(_ product: DJIBaseProduct?) {
         
         NSLog("Product Connected")
         
-        if (product != nil) {
-            let camera = self.fetchCamera()
-            if (camera != nil) {
-                camera!.delegate = self
-            }
-            self.setupVideoPreviewer()
+        if let camera = fetchCamera() {
+            camera.delegate = self
         }
+        self.setupVideoPreviewer()
         
         //If this demo is used in China, it's required to login to your DJI account to activate the application. Also you need to use DJI Go app to bind the aircraft to your DJI account. For more details, please check this demo's tutorial.
         DJISDKManager.userAccountManager().logIntoDJIUserAccount(withAuthorizationRequired: false) { (state, error) in
-            if(error != nil){
+            if let _ = error {
                 NSLog("Login failed: %@" + String(describing: error))
             }
         }
-        
     }
     
     func productDisconnected() {
-        
         NSLog("Product Disconnected")
 
-        let camera = self.fetchCamera()
-        if((camera != nil) && (camera?.delegate?.isEqual(self))!){
-           camera?.delegate = nil
+        if let camera = fetchCamera(), let delegate = camera.delegate, delegate.isEqual(self) {
+            camera.delegate = nil
         }
         self.resetVideoPreview()
     }
     
     func appRegisteredWithError(_ error: Error?) {
-        
         var message = "Register App Successed!"
-        if (error != nil) {
+        if let _ = error {
             message = "Register app failed! Please enter your app key and check the network."
         } else {
             DJISDKManager.startConnectionToProduct()
@@ -155,7 +135,7 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         NSLog("Download database : \n%lld/%lld", progress.completedUnitCount, progress.totalUnitCount)
     }
     
-    // DJICameraDelegate Method
+    // MARK: DJICameraDelegate Method
     func camera(_ camera: DJICamera, didUpdate cameraState: DJICameraSystemState) {
         self.isRecording = cameraState.isRecording
         self.recordTimeLabel.isHidden = !self.isRecording
@@ -163,9 +143,9 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         self.recordTimeLabel.text = formatSeconds(seconds: cameraState.currentVideoRecordingTimeInSeconds)
         
         if (self.isRecording == true) {
-            self.recordButton.setTitle("Stop Record", for: UIControlState.normal)
+            self.recordButton.setTitle("Stop Record", for: .normal)
         } else {
-            self.recordButton.setTitle("Start Record", for: UIControlState.normal)
+            self.recordButton.setTitle("Start Record", for: .normal)
         }
         
         //Update UISegmented Control's State
@@ -174,74 +154,71 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         } else {
             self.workModeSegmentControl.selectedSegmentIndex = 1
         }
-        
     }
     
-    // DJIVideoFeedListener Method
+    // MARK: DJIVideoFeedListener Method
     func videoFeed(_ videoFeed: DJIVideoFeed, didUpdateVideoData rawData: Data) {
-        
         let videoData = rawData as NSData
         let videoBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: videoData.length)
         videoData.getBytes(videoBuffer, length: videoData.length)
         DJIVideoPreviewer.instance().push(videoBuffer, length: Int32(videoData.length))
     }
     
-    // IBAction Methods
+    // MARK: IBAction Methods
     @IBAction func captureAction(_ sender: UIButton) {
-       
-        let camera = self.fetchCamera()
-        if (camera != nil) {
-            camera?.setMode(DJICameraMode.shootPhoto, withCompletion: {(error) in
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1){
-                    camera?.startShootPhoto(completion: { (error) in
-                        if (error != nil) {
-                            NSLog("Shoot Photo Error: " + String(describing: error))
-                        }
-                    })
+        guard let camera = fetchCamera() else {
+            return
+        }
+        
+        camera.setMode(DJICameraMode.shootPhoto, withCompletion: {(error) in
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1){
+                camera.startShootPhoto(completion: { (error) in
+                    if let _ = error {
+                        NSLog("Shoot Photo Error: " + String(describing: error))
+                    }
+                })
+            }
+        })
+    }
+    
+    @IBAction func recordAction(_ sender: UIButton) {
+        guard let camera = fetchCamera() else {
+            return
+        }
+        
+        if (self.isRecording) {
+            camera.stopRecordVideo(completion: { (error) in
+                if let _ = error {
+                    NSLog("Stop Record Video Error: " + String(describing: error))
+                }
+            })
+        } else {
+            camera.startRecordVideo(completion: { (error) in
+                if let _ = error {
+                    NSLog("Start Record Video Error: " + String(describing: error))
                 }
             })
         }
     }
     
-    @IBAction func recordAction(_ sender: UIButton) {
-        
-        let camera = self.fetchCamera()
-        if (camera != nil) {
-            if (self.isRecording) {
-                camera?.stopRecordVideo(completion: { (error) in
-                    if (error != nil) {
-                        NSLog("Stop Record Video Error: " + String(describing: error))
-                    }
-                })
-            } else {
-                camera?.startRecordVideo(completion: { (error) in
-                    if (error != nil) {
-                        NSLog("Start Record Video Error: " + String(describing: error))
-                    }
-                })
-            }
-        }
-    }
-    
     @IBAction func workModeSegmentChange(_ sender: UISegmentedControl) {
+        guard let camera = fetchCamera() else {
+            return
+        }
         
-        let camera = self.fetchCamera()
-        if (camera != nil) {
-            if (sender.selectedSegmentIndex == 0) {
-                camera?.setMode(DJICameraMode.shootPhoto,  withCompletion: { (error) in
-                    if (error != nil) {
-                        NSLog("Set ShootPhoto Mode Error: " + String(describing: error))
-                    }
-                })
-                
-            } else if (sender.selectedSegmentIndex == 1) {
-                camera?.setMode(DJICameraMode.recordVideo,  withCompletion: { (error) in
-                    if (error != nil) {
-                        NSLog("Set RecordVideo Mode Error: " + String(describing: error))
-                    }
-                })
-                
-            }
+       if (sender.selectedSegmentIndex == 0) {
+            camera.setMode(DJICameraMode.shootPhoto,  withCompletion: { (error) in
+                if let _ = error {
+                    NSLog("Set ShootPhoto Mode Error: " + String(describing: error))
+                }
+            })
+            
+        } else if (sender.selectedSegmentIndex == 1) {
+            camera.setMode(DJICameraMode.recordVideo,  withCompletion: { (error) in
+                if let _ = error {
+                    NSLog("Set RecordVideo Mode Error: " + String(describing: error))
+                }
+            })
         }
     }
 
