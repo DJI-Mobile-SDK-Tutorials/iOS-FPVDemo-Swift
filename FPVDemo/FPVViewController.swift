@@ -7,9 +7,13 @@ import UIKit
 import DJISDK
 import DJIWidget
 
-class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerDelegate, DJICameraDelegate {
+class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerDelegate, DJICameraDelegate, DJIVideoPreviewerFrameControlDelegate {
     
     var isRecording : Bool!
+    
+    let enableBridgeMode = false
+    
+    let bridgeAppIP = "10.81.52.50"
     
     @IBOutlet var recordTimeLabel: UILabel!
     @IBOutlet var captureButton: UIButton!
@@ -48,6 +52,7 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
             DJISDKManager.videoFeeder()?.primaryVideoFeed.add(self, with: nil)
         }
         DJIVideoPreviewer.instance().start()
+        DJIVideoPreviewer.instance()?.frameControlHandler = self;
     }
     
     func resetVideoPreview() {
@@ -125,7 +130,11 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
         if let _ = error {
             message = "Register app failed! Please enter your app key and check the network."
         } else {
-            DJISDKManager.startConnectionToProduct()
+            if enableBridgeMode {
+                DJISDKManager.enableBridgeMode(withBridgeAppIP: bridgeAppIP)
+            } else {
+                DJISDKManager.startConnectionToProduct()
+            }
         }
         
         self.showAlertViewWithTitle(title:"Register App", withMessage: message)
@@ -220,6 +229,32 @@ class FPVViewController: UIViewController,  DJIVideoFeedListener, DJISDKManagerD
                 }
             })
         }
+    }
+    
+    // MARK: DJIVideoPreviewerFrameControlDelegate Method
+    func parseDecodingAssistInfo(withBuffer buffer: UnsafeMutablePointer<UInt8>!, length: Int32, assistInfo: UnsafeMutablePointer<DJIDecodingAssistInfo>!) -> Bool {
+        return DJISDKManager.videoFeeder()?.primaryVideoFeed.parseDecodingAssistInfo(withBuffer: buffer, length: length, assistInfo: assistInfo) ?? false
+    }
+    
+    func isNeedFitFrameWidth() -> Bool {
+        let displayName = fetchCamera()?.displayName
+        if displayName == DJICameraDisplayNameMavic2ZoomCamera ||
+            displayName == DJICameraDisplayNameMavic2ProCamera {
+            return true
+        }
+        return false
+    }
+    
+    func syncDecoderStatus(_ isNormal: Bool) {
+        DJISDKManager.videoFeeder()?.primaryVideoFeed.syncDecoderStatus(isNormal)
+    }
+    
+    func decodingDidSucceed(withTimestamp timestamp: UInt32) {
+        DJISDKManager.videoFeeder()?.primaryVideoFeed.decodingDidSucceed(withTimestamp: UInt(timestamp))
+    }
+    
+    func decodingDidFail() {
+        DJISDKManager.videoFeeder()?.primaryVideoFeed.decodingDidFail()
     }
 
 }
